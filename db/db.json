@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Yatta",
+      "lastname": "fab",
+      "email": "fabio@gmail.com",
+      "birthday": "2022-02-05",
+      "city": "Cotonou",
+      "country": "Bénin"
+    },
+    {
+      "firstname": "Groupe",
+      "lastname": "id",
+      "email": "yattadeogracias@gmail.com",
+      "birthday": "2022-02-04",
+      "city": "Cotonou",
+      "country": "Belize",
+      "id": 2
+    },
+    {
+      "firstname": "Jacques",
+      "lastname": "BENOIT",
+      "email": "benoitjacques@gmail.com",
+      "birthday": "2022-02-04",
+      "city": "cotonou2",
+      "country": "Bangladesh",
+      "id": 3
+    },
+    {
+      "firstname": "dd",
+      "lastname": "dssd",
+      "email": "dsd@gmail.com",
+      "birthday": "2022-02-02",
+      "city": "cc",
+      "country": "Algeria",
+      "id": 4
+    },
+    {
+      "firstname": "gggg",
+      "lastname": "gggg",
+      "email": "gg@dkk.com",
+      "birthday": "2022-02-20",
+      "city": "eee",
+      "country": "Barbados",
+      "id": 5
+    },
+    {
+      "firstname": "ggg",
+      "lastname": "gg",
+      "email": "gg@gmail.com",
+      "birthday": "2022-02-26",
+      "city": "gg",
+      "country": "Azerbaijan",
+      "id": 6
+    }
+  ]
+}
