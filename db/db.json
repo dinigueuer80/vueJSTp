@@ -53,6 +53,15 @@
       "city": "gg",
       "country": "Azerbaijan",
       "id": 6
+    },
+    {
+      "firstname": "DEGLA",
+      "lastname": "Fabrice",
+      "email": "fabiodegla15@gmail.com",
+      "birthday": "2022-02-08",
+      "city": "Cotonou",
+      "country": "Benin",
+      "id": 7
     }
   ]
 }
