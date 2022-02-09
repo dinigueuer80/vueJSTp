@@ -264,7 +264,7 @@
 </template>
 
 <script>
-    import axios from 'axios'
+    import axios from 'axios';
     export default {
         name : 'SignUp',
         data()
@@ -279,8 +279,39 @@
             }
         },
         methods:{
+
             async signUp()
             {
+                if(this.firstname == '')
+                {
+                    alert("Veuillez saisir votre Nom de Famille");
+                    return this.$router.push({name:"SignUp"})
+                }
+                if(this.lastname == '')
+                {
+                    alert("Veuillez saisir votre Prénom");
+                    return this.$router.push({name:"SignUp"})
+                }
+                if(this.email == '')
+                {
+                    alert("Veuillez saisir votre Adresse Email");
+                    return this.$router.push({name:"SignUp"})
+                }
+                if(this.birthday == '')
+                {
+                    alert("Veuillez saisir date de Naissance");
+                    return this.$router.push({name:"SignUp"})
+                }
+                if(this.city == '')
+                {
+                    alert("Veuillez saisir votre Ville");
+                    return this.$router.push({name:"SignUp"})
+                }
+                if(this.country == '')
+                {
+                    alert("Veuillez selectionnez votre pays");
+                    return this.$router.push({name:"SignUp"})
+                }
                 // console.warn('signUp', this.firstname, this.lastname, this.email, this.birthday, this.city, this.country)
                 let result = await axios.post("http://localhost:3000/users",{
                     firstname:this.firstname,
@@ -296,9 +327,15 @@
                     localStorage.setItem("user-info", JSON.stringify(result.data));
                     this.$router.push({name:"Home"})
                 }
-                else{
-                    alert("Erreur");
-                }
+                console.warn("resultat", result)
+            }
+        },
+        mounted()
+        {
+            let user = localStorage.getItem('user-info');
+            if(!user)
+            {
+                this.$router.push({name:'SignUp'})
             }
         }
     }
